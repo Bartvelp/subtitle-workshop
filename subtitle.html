@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fix SRT files</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="row">
+	<div class="col-sm-6">
+		<video width="100%" height="100%" controls autoplay>
+			<track label="English subtitles" kind="subtitles" srclang="en" src="" default="" id="subtitle">
+		</video>
+	</div>
+	<div class="col-sm-6">
+		<h1>Select Files</h1>
+		<h4 style="display: inline;"> Select MP4 </h2><input style="display: inline;" id="videoInput" type="file" accept="video/*"/>
+		<br>
+		<h4 style="display: inline;"> Select SRT </h2><input style="display: inline;" id="srtInput" type="file" accept="srt/*"/>
+		<h1>Change Sync</h1>
+		<p>Change Speed: </p> <input id="speed" type="number"/>
+		<p>Add Delay: </p> <input id="delay" type="number"/> <button id="delayButton" type="button">Add it!</button>
+	</div>
+</div>
+
+<script src="srt.js"></script>
+</body>
+</html>
